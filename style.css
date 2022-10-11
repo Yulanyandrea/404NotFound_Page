@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Space+Mono&family=Work+Sans:wght@100&display=swap');
+ 
 *{
     box-sizing: border-box;
     margin: 0;
@@ -16,18 +17,27 @@ body{
 }
 
 .container{
-    display: flex;   
+    display: flex;
+    margin-top: 150px;
+       
 }
 
 .image{
     display: flex;
     justify-content: left;
+    width:500px ;
+    height:450px;
+}
+.image img{
+    width: 100%;
 }
 
 .text{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    height: 400px;
+    margin-left: 100px;
 }
 
 .text h2{
@@ -39,8 +49,6 @@ body{
     font-weight: 700;
     max-width: 400px;
     width: 300px;
-    height: 10px;
-
 }
 .text p{
     left: 650px;
@@ -50,7 +58,6 @@ body{
     font-weight: 500;
     max-width: 300px;
     width: 300px;
-    height: 10px;
 }
 .text button {
         
@@ -64,26 +71,36 @@ body{
     min-height: 50px;
     text-align: center;
     align-items: center;
-}
+} 
 
-@media(min-width:768px){
-    
-    
-        
-       
-       
-    
-}
 
-@media (min-width: 1440px) {
-    *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 5px;
-    }
+
+@media (max-width: 1200px) {
     .container{
-        display: flex;   
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
     }
+
+    .text{
+        margin-left: 50px;
+    }
+
+    .text h2 p{
+        width: 250px;
+    }
+
+    .image {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        align-self: center;
+        margin-left: -40px;
+       
+        
+
+    }
+   
   }
 
   
