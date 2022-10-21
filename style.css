@@ -106,4 +106,12 @@ body{
    
   }
 
+  @media (min-width:1440px) {
+    .container{
+        padding:16%;
+        margin: 0%;
+
+    }
+}
+
   
